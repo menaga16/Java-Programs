@@ -16,14 +16,14 @@ public class happy_number
 
   public static void check_happy(int n) 
   {
-        boolean happy = false;
-        for (int i = 0; i < 20; i++)
+        boolean happyfalse;
+        for (int i=0;i<20;i++)
        { 
             n = digitSquareSum(n);
 
-            if (n == 1) 
+            if (n==1) 
             {
-                happy = true;
+                happy=true;
                 break;
             }
         }
@@ -52,9 +52,9 @@ public class happy_number
 
     public static void main(String[] args) 
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+        int number=scanner.nextInt();
         check_happy(number);
         scanner.close();
     }
