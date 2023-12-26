@@ -19,7 +19,7 @@ public class happy_number
         boolean happyfalse;
         for (int i=0;i<20;i++)
        { 
-            n = digitSquareSum(n);
+            n=digitSquareSum(n);
 
             if (n==1) 
             {
