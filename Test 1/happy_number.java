@@ -16,7 +16,7 @@ public class happy_number
 
   public static void check_happy(int n) 
   {
-        boolean happyfalse;
+        boolean happy=false;
         for (int i=0;i<20;i++)
        { 
             n=digitSquareSum(n);
