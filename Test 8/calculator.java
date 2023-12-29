@@ -26,7 +26,7 @@ public class calculator {
     public static void main(String[] args) 
     {
         calculator obj=new calculator();
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
 
         System.out.println("Enter 2 integers:");
         int a=scanner.nextInt();
