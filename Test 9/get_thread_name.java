@@ -13,15 +13,15 @@ import java.util.Scanner;
 public class get_thread_name {
     
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
 
         System.out.print("Enter name for Thread 1: ");
-        String t1name = scanner.nextLine();
+        String t1name=scanner.nextLine();
 
         System.out.print("Enter name for Thread 2: ");
-        String t2name = scanner.nextLine();
+        String t2name=scanner.nextLine();
         
-        MyRunnable obj = new MyRunnable();
+        MyRunnable obj=new MyRunnable();
         Thread t1=new Thread(obj,t1name);
         Thread t2=new Thread(obj,t2name);
 
@@ -35,7 +35,7 @@ public class get_thread_name {
 class MyRunnable implements Runnable {
     public void run() 
     {
-        String threadName = Thread.currentThread().getName();
-        System.out.println("Thread name: " + threadName);
+        String threadName=Thread.currentThread().getName();
+        System.out.println("Thread name: "+threadName);
     }
 }
